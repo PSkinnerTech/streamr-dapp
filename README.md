@@ -1,47 +1,48 @@
-# Svelte + TS + Vite
+# AirGuardian App
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+Decentralized air quality monitoring system: Real-time air quality data collection and visualization from IoT sensors deployed in various locations.
 
-## Recommended IDE Setup
+## Description
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+### Introduction
 
-## Need an official Svelte framework?
+Air pollution is a global issue that affects millions of people, causing numerous health problems and contributing to climate change. To address this challenge, AirGuardian has been developed as a groundbreaking decentralized air quality monitoring system. Combining the power of the SWAN Stack with Svelte, Arweave Wallet, and ARConnect, AirGuardian offers a secure, scalable, and user-friendly solution for real-time air quality data collection, analysis, and visualization. In this article, we'll explore how AirGuardian works, its key features, and how you can contribute to the platform using Raspberry Pi and air quality sensors.
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+### How AirGuardian Works
 
-## Technical considerations
+AirGuardian leverages the SWAN Stack, replacing Next.js with Svelte to build a fast and responsive web application. The platform uses Streamr for real-time data transmission, Warp Contracts for device authentication and data validation, and Arweave for permanent data storage. Additionally, Arweave Wallet and ARConnect are utilized for secure user login and data management. This powerful combination of technologies enables AirGuardian to provide a comprehensive and transparent solution for air quality monitoring.
 
-**Why use this over SvelteKit?**
+### Svelte Integration
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+Svelte is an innovative open-source web development framework for building fast and responsive applications. By using Svelte instead of Next.js, AirGuardian developers can create a lightweight and high-performance web application that ensures a seamless user experience while accessing real-time air quality data.
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+### Arweave Wallet and ARConnect Integration
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+AirGuardian uses Arweave Wallet and ARConnect to provide a secure and user-friendly login system. Arweave Wallet allows users to manage their AR tokens and interact with the Arweave network, while ARConnect is a browser extension that streamlines the process of connecting to the wallet. By integrating these technologies, AirGuardian ensures a secure and straightforward login experience while maintaining user privacy and data ownership.
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+### Upcoming Raspberry Pi Tutorial
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+AirGuardian is committed to fostering a community-driven approach to air quality monitoring. To help users contribute to the platform, a comprehensive tutorial on setting up Raspberry Pi devices with air quality sensors to be integrated using Streamr is coming soon. This tutorial will guide users through the process of setting up their Raspberry Pi devices, connecting air quality sensors, and transmitting the collected data to the AirGuardian platform. By empowering users to deploy their own monitoring devices, AirGuardian aims to create a truly decentralized and global network of air quality data.
 
-**Why include `.vscode/extensions.json`?**
+### Key Features of AirGuardian
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+- Real-time air quality monitoring: AirGuardian collects and displays real-time data on air quality parameters such as particulate matter, nitrogen dioxide, and ozone levels from IoT sensors deployed across the globe.
 
-**Why enable `allowJs` in the TS template?**
+- Secure and decentralized data management: AirGuardian leverages blockchain technology to ensure data security, privacy, and tamper-proof storage. Data validation and device authentication are managed through Warp Contracts, while Arweave provides permanent data storage.
 
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
+- User-friendly web application: The AirGuardian web application, built with Svelte, offers an intuitive and responsive interface for users to visualize and analyze air quality data.
 
-**Why is HMR not preserving my local component state?**
+- Community-driven approach: AirGuardian encourages users to contribute to the platform by setting up their own air quality monitoring devices, fostering a decentralized and collaborative approach to air quality monitoring.
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
+### Conclusion
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+AirGuardian is revolutionizing the way we monitor and understand air quality by harnessing the power of decentralized technology. With its innovative combination of the SWAN Stack, Svelte, Arweave Wallet, and ARConnect, AirGuardian offers a secure, scalable, and user-friendly platform for real-time air quality data collection and analysis. By providing the tools, resources, and community support necessary to create a global network of air quality monitoring devices, AirGuardian is paving the way for a cleaner, healthier future for everyone.
 
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+## Developer Setup
+
+<br><br>
+
+## File Org Chart
+
+<br>
+<img width="1206" alt="Screenshot 2023-04-01 at 2 51 06 PM" src="https://user-images.githubusercontent.com/78289253/229311348-d6969630-2053-48bf-87d9-77212787aef8.png">
