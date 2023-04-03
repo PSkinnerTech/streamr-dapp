@@ -44,5 +44,3 @@ AirGuardian is revolutionizing the way we monitor and understand air quality by 
 
 ## File Org Chart
 
-<br>
-<img width="1206" alt="Screenshot 2023-04-01 at 2 51 06 PM" src="https://user-images.githubusercontent.com/78289253/229311348-d6969630-2053-48bf-87d9-77212787aef8.png">
